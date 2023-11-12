@@ -1,0 +1,31 @@
+.Card_element {
+  background-color: rgba(255,255,255,0.90) !important;
+}
+
+.Card_element:hover {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 24px rgba(255,255,255,0.75);
+}
+
+
+.Card_element:hover .titleCard {
+  font-weight: 500;
+  transition: font-weight 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+@media (min-width: 726px) {
+  #btnGroup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  #btnGroup {
+    Button {
+      span {
+        display: none;
+      }
+    }
+  }
+}
