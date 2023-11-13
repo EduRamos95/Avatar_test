@@ -1,0 +1,48 @@
+
+
+.Card_element:hover {
+  background-color: rgba(255,255,255,1);
+  box-shadow: 0 0 24px rgba(255,255,255,0.75);
+}
+
+
+.Card_element:hover .titleCard {
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: font-weight 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  /* transition: font-size 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms; */
+}
+
+#btnGroup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-shadow: none;
+}
+
+.opcion {
+  display: none;
+  flex-grow: 1;
+}
+
+#btnGroup button:hover ,
+#btnGroup button:active ,
+#btnGroup button:focus {
+  display: inline-flex;
+  /* visibility: hidden; */
+  max-width:  200px;
+  flex-grow: 3;
+  color: #fff;
+  border-color: transparent;
+}
+
+@media (min-width: 726px) {
+
+  #btnGroup button:hover .opcion,
+  #btnGroup button:active .opcion,
+  #btnGroup button:focus .opcion {
+    display: inline;
+    width: fit-content;
+  }
+}
